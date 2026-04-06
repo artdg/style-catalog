@@ -1,0 +1,17 @@
+CREATE TABLE IF NOT EXISTS offers (
+  id VARCHAR(128) PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  category VARCHAR(64) NOT NULL,
+  accent VARCHAR(32) NULL,
+  tags_json JSON NOT NULL,
+  payouts_json JSON NOT NULL,
+  min_withdraw_usd DECIMAL(10,2) NULL,
+  verified TINYINT(1) NOT NULL DEFAULT 0,
+  rating_avg DECIMAL(3,1) NULL,
+  rating_count INT NULL,
+  cta_url TEXT NOT NULL,
+  i18n_json JSON NOT NULL,
+  reviews_json JSON NOT NULL,
+  updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+

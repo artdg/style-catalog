@@ -1,0 +1,91 @@
+import type { Offer } from '../types/offer'
+
+export const offers: Offer[] = [
+  {
+    id: 'earnbitmoon',
+    name: 'Earnbitmoon',
+    tagline: 'Faucet + PTC with fast withdrawals',
+    category: 'Earn Crypto',
+    tags: ['TOP', 'HOT'],
+    cadence: 'every 5 minutes',
+    payouts: ['Cwallet', 'FaucetPay', 'Crypto wallet'],
+    highlights: [
+      'Faucet, PTC, offers, videos',
+      'Levels & bonuses',
+      'Instant withdrawals to wallet',
+    ],
+    ctaLabel: 'Earn now',
+    ctaUrl: 'https://exma.io/',
+    accent: 'violet',
+    verified: true,
+  },
+  {
+    id: 'earnsurveys',
+    name: 'EarnLab',
+    tagline: 'High-reward tasks and games',
+    category: 'Play and Earn',
+    tags: ['TOP', 'FAST PAY'],
+    minWithdrawUsd: 0.25,
+    payouts: ['Cwallet', 'Crypto wallet'],
+    highlights: [
+      'Games & tasks with clear progress',
+      'Daily bonuses',
+      'Low minimum withdrawal',
+    ],
+    ctaLabel: 'Earn now',
+    ctaUrl: 'https://exma.io/',
+    accent: 'emerald',
+  },
+  {
+    id: 'luckywatch',
+    name: 'LuckyWatch',
+    tagline: 'Watch videos and earn rewards',
+    category: 'Claim Free',
+    tags: ['TOP'],
+    minWithdrawUsd: 0.1,
+    payouts: ['FaucetPay', 'Crypto wallet'],
+    highlights: [
+      'Earning boosters',
+      'Referral contests',
+      'Fast withdrawals',
+    ],
+    ctaLabel: 'Earn now',
+    ctaUrl: 'https://exma.io/',
+    accent: 'sky',
+  },
+  {
+    id: 'honeygain',
+    name: 'Honeygain',
+    tagline: 'Passive income from bandwidth',
+    category: 'Passive Income',
+    tags: ['GIFT'],
+    payouts: ['Crypto wallet'],
+    highlights: [
+      'Runs in the background',
+      'Multi-platform',
+      'Transparent stats',
+    ],
+    ctaLabel: 'Earn now',
+    ctaUrl: 'https://exma.io/',
+    accent: 'amber',
+  },
+  {
+    id: 'qzino',
+    name: 'Qzino',
+    tagline: 'Bonus hub + promos',
+    category: 'Free Spins',
+    tags: ['AIRDROP', 'BONUS'],
+    payouts: ['Cwallet', 'Crypto wallet'],
+    highlights: [
+      'Bonus code',
+      'Tournaments',
+      'Seasonal events',
+    ],
+    ctaLabel: 'Earn now',
+    ctaUrl: 'https://exma.io/',
+    accent: 'rose',
+  },
+]
+
+export const categories = Array.from(new Set(offers.map((o) => o.category)))
+

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c3aed"/>
+      <stop offset="0.5" stop-color="#d946ef"/>
+      <stop offset="1" stop-color="#f43f5e"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="#09090b"/>
+  <rect x="60" y="60" width="1080" height="510" rx="40" fill="url(#g)" filter="url(#shadow)" opacity="0.95"/>
+  <g fill="#fff" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial" text-anchor="start">
+    <text x="120" y="250" font-size="64" font-weight="800">RewardHub</text>
+    <text x="120" y="320" font-size="32" font-weight="600" opacity="0.92">Modern offer catalog • SEO-ready • Fast</text>
+    <text x="120" y="390" font-size="28" font-weight="500" opacity="0.85">Categories • Curated picks • Dark mode</text>
+  </g>
+</svg>
+
